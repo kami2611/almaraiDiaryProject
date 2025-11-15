@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>E-Visa Application</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#3B82F6",
+              "background-light": "#FFFFFF",
+              "background-dark": "#111827",
+              "text-light": "#1F2937",
+              "text-dark": "#E5E7EB",
+              "subtext-light": "#6B7280",
+              "subtext-dark": "#9CA3AF",
+              "border-light": "#E5E7EB",
+              "border-dark": "#374151",
+              "image-bg-light": "#EBF3FF",
+              "image-bg-dark": "#1F2937"
+            },
+            fontFamily: {
+              display: ["Poppins", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "1rem",
+            },
+          },
+        },
+      };
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+</head>
+<body class="font-display bg-gradient-to-br from-blue-400 to-blue-600 dark:from-blue-800 dark:to-blue-900 min-h-screen flex items-center justify-center p-4">
+<div class="w-full max-w-7xl bg-background-light dark:bg-background-dark rounded-2xl shadow-2xl p-8 lg:p-12">
+<header class="flex flex-wrap items-center justify-between gap-4">
+<a class="flex items-center gap-2 text-2xl font-bold text-text-light dark:text-text-dark" href="#">
+<span class="material-symbols-outlined text-primary text-3xl">public</span>
+<span>evisa</span>
+</a>
+<nav class="hidden lg:flex items-center space-x-8">
+<a class="text-primary font-semibold border-b-2 border-primary pb-1" href="#">Home</a>
+<a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">About Us</a>
+<a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">E-Visa</a>
+<a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">FAQ</a>
+<a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">Travel Tips</a>
+<a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">Contact Us</a>
+</nav>
+<div class="hidden lg:flex items-center space-x-4">
+<button class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="px-5 py-2 text-primary border border-primary rounded-full hover:bg-primary/10 transition-colors">Register</button>
+<button class="px-5 py-2 text-white bg-primary rounded-full hover:bg-blue-700 transition-colors">Login</button>
+</div>
+<button class="lg:hidden text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</header>
+<main class="grid lg:grid-cols-2 gap-16 items-center mt-12 lg:mt-24">
+<div class="flex flex-col gap-8">
+<h1 class="text-5xl md:text-6xl font-bold text-text-light dark:text-text-dark leading-tight">
+<span class="text-primary">Online E-visa</span><br/>
+                    application
+                </h1>
+<p class="text-subtext-light dark:text-subtext-dark max-w-md">
+                    Body text lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+<div class="grid sm:grid-cols-2 gap-6 mt-4">
+<div>
+<label class="block text-sm font-medium text-text-light dark:text-text-dark mb-2" for="from">Where am I From?</label>
+<select class="w-full bg-background-light dark:bg-gray-700 border border-border-light dark:border-border-dark text-subtext-light dark:text-subtext-dark rounded-lg focus:ring-primary focus:border-primary" id="from" name="from">
+<option>Select</option>
+<option>United States</option>
+<option>Canada</option>
+<option>United Kingdom</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-text-light dark:text-text-dark mb-2" for="to">Where am I Going?</label>
+<select class="w-full bg-background-light dark:bg-gray-700 border border-border-light dark:border-border-dark text-subtext-light dark:text-subtext-dark rounded-lg focus:ring-primary focus:border-primary" id="to" name="to">
+<option>Select</option>
+<option>Thailand</option>
+<option>India</option>
+<option>Russia</option>
+</select>
+</div>
+</div>
+<div class="mt-4">
+<button class="w-full sm:w-auto bg-primary text-white font-medium py-3 px-8 rounded-full flex items-center justify-center gap-2 hover:bg-blue-700 transition-transform hover:scale-105 shadow-lg shadow-blue-500/20">
+                        Get E-Visa
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="relative hidden lg:block">
+<div class="bg-image-bg-light dark:bg-image-bg-dark rounded-2xl p-4">
+<img alt="Woman holding passport and tickets, standing with a yellow suitcase." class="w-full h-auto object-cover rounded-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRtL9emTSnBd-xR7fG8avHPW2Qp-x0wr6p22uNVK9yHa7PWSHt6_0Y1BtyrBQCjFy_U4_Ajfut_fa-Cr-oo8V446BhCvwtQk16yTtDZ1jLP8VYKfCHTaxi90swP5GzMIvxu53hqJkE3_bdl2oFLrAH62iVZMGjEfN2uDcNLpfkHAUnBoSNksrGxClRSULTT7NdIkY9wQ8IYBnbbu9aK_OVG8DgVVmqgwNA2NzJVEoEmiwMMXbgR6XWNxwioggmFJmAy2KFY7U23zaW"/>
+</div>
+<div class="absolute -top-6 left-4 flex items-center gap-2 bg-background-light dark:bg-background-dark p-2 px-4 rounded-full shadow-lg">
+<img alt="Flag of Thailand" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlGVIebyb8nFDh3YHEbHp42U3aR5qzriuAlLormIEw9B3mF2ngkKCZdoY2znRAMb_gmki0HT3bL1hHve9IwWynkUkB2EzeDh3TiflL3WDvmKQ4E1Hrif17ZOx7oas86wokBVZNJP2N4JHTxsGzm4HqG3rWcOo7ZvZbUCCaw8zK9BkqlFeLnSiu-rym72q7ZReY_hkyG6mjEv8zGRelSOIKEQSG2MIUJmO15SB0vPupmJW9s8RbZzssB1ryPmE4kyy0dMFrt9N87gYS"/>
+<span class="text-sm font-medium text-text-light dark:text-text-dark">Thailand</span>
+</div>
+<div class="absolute top-24 -right-12 flex items-center gap-2 bg-background-light dark:bg-background-dark p-2 px-4 rounded-full shadow-lg">
+<img alt="Flag of Russia" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdq053NJYwyNdanVhJh8--BvUFceEZlSGMl1g_gpBKdvIZM1W8sMxSJXcsczm7uPhGaiheiz_SLn5QnWQQ8dJO4gkJiv1FZlVoHBZsZtd8a3jpxzuySr0QkKKc1oXOhpg4SZ_0RcEqTtq8hrmZaNfAk3C07v3oslqGBBH3NUVdV4KI-WNvKDQORr-AaZ3JxhN-7lqIe9v53-5TxSUzbOufQ67mBWRRqzRAcCQOKbGKxetLJImrlfVIXQZ6uP6cJoRxo-QUHwXgT-pQ"/>
+<span class="text-sm font-medium text-text-light dark:text-text-dark">Russia</span>
+</div>
+<div class="absolute top-3/4 -right-8 flex items-center gap-2 bg-background-light dark:bg-background-dark p-2 px-4 rounded-full shadow-lg">
+<img alt="Flag of USA" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAb5-Mgcd8yJ1YdVN_I7YXpE_1LJB6_TW1rZ2buyb4e3VD5DvqAqK696_tBHXuwmx5-gR_cVdiFxElV1nt9Ceu5tEymy3QdHYqBGJykeqSflqkNCsKOm8qOvXWukywdHpYUQ53U8NUKl7ZUFgAqspyzsgcsYmnlway6VblLZtfyMkOF37LbO9snNiD19XPL3_mO-GF283f8BPcdvwsx40fH83LuAlLVtZWdgvlCKrcdmDrYir2OQbIlLwB2vnDmqXtQfgrX0Zc_cRkZ"/>
+<span class="text-sm font-medium text-text-light dark:text-text-dark">USA</span>
+</div>
+<div class="absolute top-1/2 -left-12 flex items-center gap-2 bg-background-light dark:bg-background-dark p-2 px-4 rounded-full shadow-lg">
+<img alt="Flag of India" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_ExtTxaRb65nwrXrHJYrQ5kE2nMBFXeEl5OMaeWaeWca01KYtBzhplIm6bjMwXMflCUDv4KX0-myYy4jC6wqh_rcSjD7BBFmb9O8mCovJlzzL0_36atgavojRWpgfYnSmwx5bfDS1WmXl_PoWxvVDriMHZ7ZZbqJfknAR9XhV_a65R-LHUKlVSHB7rbGDFyB802fj3d_JnEhjIgrFw3jo57TZg2G2l8dwXWJDoxlGbJ8S2bYsKUJVqgA2N5CKrHFCvSyMjjnQwHL_"/>
+<span class="text-sm font-medium text-text-light dark:text-text-dark">India</span>
+</div>
+<div class="absolute bottom-12 -left-16 flex items-center gap-2 bg-background-light dark:bg-background-dark p-2 px-4 rounded-full shadow-lg">
+<img alt="Flag of Tanzania" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzkO2Jy31lwl179DW6ZGGZ5N1zUf46Eli-DcDrEb48KHICvzpfRrSMXWid0ouhflxIeJ1SHezdz9aMST0JiWscoFz3RchlQPtnAX8i5-53L6CBLeIUN0lRAOneJgDFBzwwkykhTSVLQm4T2emNfoRsjMV21YZBl0_tLAXE8jzqK3HYySJUR1GYZP8qSYhz9CDrkVPmNF4Z-Rx07FEsCAfe48RlBIm9TJEbTEHmH2CQtDNQoWQ7dwETBr33Oyi-hfdgEYycLbEdEdBO"/>
+<span class="text-sm font-medium text-text-light dark:text-text-dark">Tanzania</span>
+</div>
+</div>
+</main>
+<section class="mt-16 lg:mt-24">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold text-text-light dark:text-text-dark">Our Recent Work</h2>
+<p class="mt-4 text-subtext-light dark:text-subtext-dark max-w-2xl mx-auto">Here are some of the recent e-visa applications we have successfully processed for our clients traveling to various destinations.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="border border-border-light dark:border-border-dark rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+<img alt="Tourist destination in Thailand" class="w-full h-56 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlGVIebyb8nFDh3YHEbHp42U3aR5qzriuAlLormIEw9B3mF2ngkKCZdoY2znRAMb_gmki0HT3bL1hHve9IwWynkUkB2EzeDh3TiflL3WDvmKQ4E1Hrif17ZOx7oas86wokBVZNJP2N4JHTxsGzm4HqG3rWcOo7ZvZbUCCaw8zK9BkqlFeLnSiu-rym72q7ZReY_hkyG6mjEv8zGRelSOIKEQSG2MIUJmO15SB0vPupmJW9s8RbZzssB1ryPmE4kyy0dMFrt9N87gYS"/>
+<div class="p-6">
+<h3 class="text-xl font-semibold text-text-light dark:text-text-dark mb-2">E-Visa for Thailand</h3>
+<p class="text-subtext-light dark:text-subtext-dark text-sm">Successfully processed a tourist e-visa for a client's wonderful vacation to the beautiful beaches and vibrant cities of Thailand.</p>
+</div>
+</div>
+<div class="border border-border-light dark:border-border-dark rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+<img alt="Tourist destination in India" class="w-full h-56 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_ExtTxaRb65nwrXrHJYrQ5kE2nMBFXeEl5OMaeWaeWca01KYtBzhplIm6bjMwXMflCUDv4KX0-myYy4jC6wqh_rcSjD7BBFmb9O8mCovJlzzL0_36atgavojRWpgfYnSmwx5bfDS1WmXl_PoWxvVDriMHZ7ZZbqJfknAR9XhV_a65R-LHUKlVSHB7rbGDFyB802fj3d_JnEhjIgrFw3jo57TZg2G2l8dwXWJDoxlGbJ8S2bYsKUJVqgA2N5CKrHFCvSyMjjnQwHL_"/>
+<div class="p-6">
+<h3 class="text-xl font-semibold text-text-light dark:text-text-dark mb-2">E-Visa for India</h3>
+<p class="text-subtext-light dark:text-subtext-dark text-sm">Facilitated a business e-visa for a corporate client attending important meetings and exploring investment opportunities in India.</p>
+</div>
+</div>
+<div class="border border-border-light dark:border-border-dark rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+<img alt="Tourist destination in Russia" class="w-full h-56 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdq053NJYwyNdanVhJh8--BvUFceEZlSGMl1g_gpBKdvIZM1W8sMxSJXcsczm7uPhGaiheiz_SLn5QnWQQ8dJO4gkJiv1FZlVoHBZsZtd8a3jpxzuySr0QkKKc1oXOhpg4SZ_0RcEqTtq8hrmZaNfAk3C07v3oslqGBBH3NUVdV4KI-WNvKDQORr-AaZ3JxhN-7lqIe9v53-5TxSUzbOufQ67mBWRRqzRAcCQOKbGKxetLJImrlfVIXQZ6uP6cJoRxo-QUHwXgT-pQ"/>
+<div class="p-6">
+<h3 class="text-xl font-semibold text-text-light dark:text-text-dark mb-2">E-Visa for Russia</h3>
+<p class="text-subtext-light dark:text-subtext-dark text-sm">Arranged a cultural exchange e-visa for a student, enabling them to experience the rich history and art scene in Russia.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="mt-16 lg:mt-24">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold text-text-light dark:text-text-dark">Our Responsibilities</h2>
+<p class="mt-4 text-subtext-light dark:text-subtext-dark max-w-2xl mx-auto">We are committed to providing a secure, reliable, and user-friendly platform, ensuring your personal data is protected and your application process is seamless.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="lg:col-span-2 border border-border-light dark:border-border-dark rounded-xl shadow-sm p-6 flex flex-col md:flex-row gap-6 items-center">
+<img alt="Data security icon" class="w-32 h-32 object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCIgWRrtRQWqE72ed2-TT1RSPRtSmTmn5Clmk9iz9lf8n_IcOEiFtqDhy4_hjvIE-RBraP3UIWWwHgrvKen63eRaXy-WwUvJheTLdggrvdA6LSgDkQLA9tpSinkrLuN-L73kAUscnpbRAUeK4OoNV_iJNzVabmKMguVRTER4R7dOIjX5eES7w41ZvPbJQUkphnp3z1lIYywiElml25JAfUWQv9lEbYxSG3rr038EedfMHYWLNJuLN2BZixxMO0imUYaJuPB4ST4dx6"/>
+<div>
+<h3 class="text-xl font-semibold text-text-light dark:text-text-dark mb-2">Data Privacy &amp; Security</h3>
+<p class="text-subtext-light dark:text-subtext-dark text-sm">Your privacy is our top priority. We employ state-of-the-art encryption and security protocols to protect your personal and travel information. All data is handled with the utmost confidentiality and is never shared with third parties without your explicit consent. Our systems are regularly audited to ensure compliance with global data protection regulations, giving you peace of mind.</p>
+</div>
+</div>
+<div class="border border-border-light dark:border-border-dark rounded-xl shadow-sm p-6 flex flex-col items-center text-center">
+<img alt="Application accuracy icon" class="w-32 h-32 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_Ms9l6eLWl-S32fQ9qzNCWchVxvwLzDPaXfLtO_c_c-AunHmpBZ535rmUqd-RTEFSP-iuYK6Fst_3df1WDt_z2xVJELCdq1r0LfdM_SFUOPTub0h6Zp2oCA5tnHI37Hpc3H6VWbY7tVFnnGMJykjEWgtWj266_7cA5wVHBgbP3n8NEsFCxA9NnMp76LrTIocP_Ya_9xpGM4heg5MQURaWnY2YfZboRiBezjFUeDRMYSzpZmrxqOSYvAavq7PFoI17X-8E93Sx1WMn"/>
+<div class="mt-6">
+<h3 class="text-xl font-semibold text-text-light dark:text-text-dark mb-2">Application Accuracy</h3>
+<p class="text-subtext-light dark:text-subtext-dark text-sm">We take responsibility for the accuracy of your visa application. Our team of experts meticulously reviews every detail you provide to prevent common errors that could lead to delays or rejections. We cross-reference information against the latest embassy requirements.</p>
+</div>
+</div>
+<div class="border border-border-light dark:border-border-dark rounded-xl shadow-sm p-6 flex flex-col items-center text-center">
+<img alt="Customer support icon" class="w-32 h-32 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQMRvL0Z7r2Eq851Ap5voyaTRKfJimhOhQHKpUOc82Lkgf6ZYmtTuxarpalLnZvzQIk9ZpmJEdl2tn2qlYB4OOp7SqGpVLqzUTj9iVZi2iAYfIP1TUz_-s8Qi0f2ebHAcvwBxOnJxgqZlIlCXZbCv_F8x3KaOaeGTsIYCa93KFhjXGrVbNYzZ7z1L93vODfJZRdOMoEUlDNcezukHsFJKl-bAhBx9BHXQj1Qbof3NEdFES34Q5Ytcy-zvqnrUtOjiXCh6ROkJuW-4x"/>
+<div class="mt-6">
+<h3 class="text-xl font-semibold text-text-light dark:text-text-dark mb-2">24/7 Customer Support</h3>
+<p class="text-subtext-light dark:text-subtext-dark text-sm">Our dedicated support team is available around the clock to assist you with any questions or concerns. Whether you need help filling out a form or have a query about your application status, we're here to provide prompt and helpful assistance via chat, email, or phone.</p>
+</div>
+</div>
+<div class="lg:col-span-2 border border-border-light dark:border-border-dark rounded-xl shadow-sm p-6 flex flex-col md:flex-row gap-6 items-center">
+<img alt="Timely processing icon" class="w-32 h-32 object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxjVJiRXXYdYBQqnBEFa1KL7r527qy41XQvcq3JQsMELVg_mOpzCw_d0XYcoh5s2QnChO0O_byR9ii-s5GZStqj-c7weqA0e9icWf1yffLVhxfo3mDy0h0r_nEZBfm2FgmuvC8cIa3CqA8Vxytn2seaQ03sfVe3VSA0GT1AMbUiYz_G2-jGu8anBk45_CTTcIXbxuy-Pan92L8C5AETcE9Iu42nexek7gF1gk3uv7jYTHTqDfSpV6cWLqn1889nkBT5HGaLbUp8kYb"/>
+<div>
+<h3 class="text-xl font-semibold text-text-light dark:text-text-dark mb-2">Transparent &amp; Timely Processing</h3>
+<p class="text-subtext-light dark:text-subtext-dark text-sm">We believe in complete transparency. Our platform provides clear timelines and regular updates on your application status. We are responsible for submitting your application to the relevant authorities promptly and keeping you informed at every stage of the process, from submission to approval. We strive to make the process as predictable as possible.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="mt-16 lg:mt-24">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold text-text-light dark:text-text-dark">Proudly Trusted By</h2>
+<p class="mt-4 text-subtext-light dark:text-subtext-dark max-w-2xl mx-auto">We partner with leading companies and organizations to provide a seamless and trustworthy e-visa experience.</p>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-x-12 gap-y-8">
+<img alt="Partner logo 1" class="h-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1iwT3ablp7TKYIEmzbXXSy0fLFvTTLdNDggRGCRKeJdT-W1XyYo-pEdNQdlgNVHgFyPzmu7YJDMgAHRLiO2-ouWzNP92pbrt70Gy-9JNXOW_bZ-sJmWJBbOrmeIJ-e3RYQsC42HZsLjnclu73zw7e0k9xaxDiVyiZzdmwmzHFfEY0IgIMaYLITv5iX5E2jjM7wcem5vPDWuaEuCaEg_dJ2Mo-tOorLwyI5EcY9deSyZHkeguVBkQsnUWzWK0bNxL1gsEoWbljy4TN"/>
+<img alt="Partner logo 2" class="h-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSyjDH7G1ftyXDcfcMfXtPdMC2_qeSibWnfUS0sWUjXHsW5Y2Zmh8ZcB6K1f-Esk7A89D01lFbkXRVVqgBrZB-Xvwp3S95lqfTo5sAGe3KK-h0N6qQKU56Ck0F8wDRS-Ehj5d_1bN5kdONl7hQDfbYBY3HteKm7GQmnt5FokvxYm0Bg6I-cBVCe6re8LSA7OmNcpBzX_uhK3X1bq3BmISjrcDs73qCcsisuYDYldUeZmpZDutfpLfXbr73NREXyvru4gVRWGPhhBZd"/>
+<img alt="Partner logo 3" class="h-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_tgveWK4QYA1TGXySmoukRcawIYL8wG8rWcQfM1m4Coth5n1cfQPVLqAN0unLCj4bEsJNaiyKaT_6ijI9klZRrWWhxDmEcLemdkZiWb73f05UBkGSibOa0TzanrL5psUKdHt5df-5zHi3ZYFSfIZv2Jt_3KPRxYw_Pn3m9RQvTckPwCtKqNl7hmV6FA7Hp0nYdf_YNjUEjunoxEBbnaxwNYcTltXI6Ey-sPEvZ7iGay6-bh1Mt0xR6SDGbllKOihvC5U9fK5carE8"/>
+<img alt="Partner logo 4" class="h-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3IJxhDJdrmnqY2PHMKxJxddbGM4NaFm_JJu-YfTIZz48PVYmqtzu73WPCh39NzpQd9hheblMqtKT3EuIFHJO48vnt6CoS3eGs9L_1iCiNQKGYpxiGnBWAHBwERaqN674kQ6VClXiV01CsBuTsIag8ejOryt9iBItCIFtS6INaGGRJMBxiqEpGVWr-anGik5-RXo4WkONYUN-Oo675yEuxuUm0QWVSdTO3P7BwcoDpzObD9XiAcQyq8G_KAB3UbEq-RdUohW6Lhhoz"/>
+<img alt="Partner logo 5" class="h-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjlxeD-RvDG-a2d7afY4G2vQFokORaX2a2Qi4xpduaAEzeufta_41u4llWHDNFk8t_-KkFJ7gPaSvI1ok9up0lztHFqyVluV6K21zsETbejlUembodPrqmtFyBIgGtmfYGGVEmYvyiK4bqjJhC6i-lmUGGhoBOr1bU8B-K5yFISq_12Ykiy2QSxXeGMNQYKcC15zxZ8kwcZaM0bNnsfg61uUUwQdqgbIh_sKh_qRaOaPx39bS7ZIwJzjFeqCwi8AFi99Gq2swKOZCf"/>
+<img alt="Partner logo 6" class="h-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYwR2qiCctT-rZybGlzHGMg3XS2PpoVUHs-QRlCbeL-ncgCL1fFB9IlM8EAirk6B7jGv9aBkZFMleAuK_hlO-wOSrg_oS8NCJQ0XusKzvkDyHaytvQByzXyJgabN9B3US651cC_W8PcX5USldEMAoFGSYg2t0C0JPwZwZTPpv9im2yqinlpWRewlFBTKEQD7wNlPGNnuFn_J8JIOGHibspLE-h_nokvcgV5PxWya4APWdXBeFqXnqYLRxQpuADbloWMyzu2OMGDQKQ"/>
+</div>
+</section>
+<section class="mt-16 lg:mt-24">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold text-text-light dark:text-text-dark">About Our Leader</h2>
+</div>
+<div class="grid lg:grid-cols-5 gap-12 items-center">
+<div class="lg:col-span-2">
+<div class="relative">
+<img alt="Portrait of the CEO" class="w-full h-auto object-cover rounded-xl shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAo-oj4by3jv8Z4KMtVDaDOMFA2_C5yBUuIJbq8s6wpXEplq5RwR4lnZF4S6FP0TU1Kg8usxmyatqvm54CqD5bZq-Gn0-Cg7Nv_1lYPdKcHlgrJZGwQG9dRRYHeFbfX6zA-lIHyPi508EboOw3NCQrsb_DPRWSWtgB75L1lCgNz9_DJ4vBiRlmGipenLp7neWIAt6LQquzO7RmO90kOGEGBh0JJUoKfn82IeM8thdl51hp4LjPubx_Hfxzvzw64FTzd6A4JuItOt7wC"/>
+<div class="absolute -bottom-4 -right-4 bg-primary text-white p-4 rounded-full shadow-lg">
+<span class="material-symbols-outlined text-4xl">format_quote</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-3">
+<p class="text-lg text-subtext-light dark:text-subtext-dark leading-relaxed">
+                        "Our mission is to simplify international travel by providing a fast, secure, and user-friendly e-visa service. We believe that crossing borders should be an exciting prospect, not a bureaucratic hurdle. With a dedicated team and cutting-edge technology, we are committed to making your travel dreams a reality, one seamless application at a time."
+                    </p>
+<div class="mt-8">
+<p class="text-xl font-semibold text-text-light dark:text-text-dark">John Doe</p>
+<p class="text-primary font-medium">Founder &amp; CEO</p>
+</div>
+</div>
+</div>
+</section>
+<section class="mt-16 lg:mt-24">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold text-text-light dark:text-text-dark">Jobs You Can Get Visa On</h2>
+<p class="mt-4 text-subtext-light dark:text-subtext-dark max-w-2xl mx-auto">Explore visa opportunities across various professional fields. We facilitate work visas for skilled individuals in high-demand sectors.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="border border-border-light dark:border-border-dark rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col">
+<img alt="Software developer working on a laptop" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHxZE9kcH3SFjcenmXYrG1DV79Vl6qGrzYnrjQXJZ6hB1l34ByFI13bMJxkfJ_oNE_cp279YppQ4z9Gix5EiumTsylzdLij-IgbwoVD_Qx4My9yOMFM2Nymj7zl-MV5-rd-ytvtv_k0g1GCmdLa0OYaxxxmLL_6Hxf6rI57KCPFU0tfO1mW_cYwGThhoiK8a514BnhGF1KOfRxeU2RgPtbanqbfa_XtrrEiCJrvOvCfDqXN2lLUhrUyZYlFARHQf66dIbDizLSGXQj"/>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="text-xl font-semibold text-text-light dark:text-text-dark mb-2">Software Developer</h3>
+<p class="text-subtext-light dark:text-subtext-dark text-sm">High demand in tech hubs globally. Opportunities for front-end, back-end, and full-stack engineers.</p>
+</div>
+</div>
+<div class="border border-border-light dark:border-border-dark rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col">
+<img alt="Nurse attending to a patient in a hospital" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeaxW7X41H-2zeUpPw64b7rDR7a97u2XSDeypIkvBy6SXgPE5pH5-Af0KglFpWQgHb0diR0vx5nwRy8dz4aOdlEmk0GDtdf2UL91KmYgHu-rmnrjmwvC6EbYgVIEXDg7d7o2NvAVZg0OeWVSmB6a_gpt-TRwWeBeMpVi9pq9KeJXL4aMw321xA3mAAqOj1L43BZ2_u4dTxKFfHhcbjLfn8X_erMkAJlTt3BUiqBFDKL25g-0wivUnAaGtmj4hkOMG2_M5O_ULrMAfK"/>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="text-xl font-semibold text-text-light dark:text-text-dark mb-2">Registered Nurse</h3>
+<p class="text-subtext-light dark:text-subtext-dark text-sm">Critical healthcare roles available in numerous countries facing shortages of medical professionals.</p>
+</div>
+</div>
+<div class="border border-border-light dark:border-border-dark rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col">
+<img alt="Mechanical engineer inspecting machinery" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1-G9eaOu-xASKwBopgdINfQPPI0SQBUrOZlaVLfyQc1NsRvl42WocsplErd6uIYUMxfD2qmwnJqX1FS5PDWvsPGXkgBwg9r2Mll2dX78MP8rUr8DdCc5lY1TOq7zqqonUirqduFz1QGyv1LxduCMKt8E6AEXnVuLtSqyb7AmYaysJ8oBA2jTS_VnphkS-bO6b7P6_EwgsrjA7M1Hr84GwRMIfE6mCu2DaiaFcqRRgvDA9fCjcQImNaAES1GzZRCDPdhFb8Pto9l4K"/>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="text-xl font-semibold text-text-light dark:text-text-dark mb-2">Mechanical Engineer</h3>
+<p class="text-subtext-light dark:text-subtext-dark text-sm">Sought after in manufacturing, automotive, and aerospace industries for design and innovation.</p>
+</div>
+</div>
+<div class="border border-border-light dark:border-border-dark rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col">
+<img alt="Chef preparing a gourmet dish in a kitchen" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxrFZA0qQiq1Nuo5SdBwm-J50Rm5hlzDsMBizkcuGM_EzgAMWaPWQ2dYWg4FwtoPcSquKFF_g6xIQFtcOOVtwanTxE9vwYDnD036kiadQaAsqg4brJ92IQ9ZX6GDGO0tA8QKMihzzSRcxk6He6Gmb_uKeLpQdLwGP_Ud32JAjTPZbXaJ5ZWQ-UTogMYWAxfOxFElBLgAJqoQauqcsq_zFUYmEan28Wpoxg2fhH6Ccm3_MaKR2qDmX1HtdULh94WsnYzcKExdnbTDvu"/>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="text-xl font-semibold text-text-light dark:text-text-dark mb-2">Chef / Cook</h3>
+<p class="text-subtext-light dark:text-subtext-dark text-sm">The hospitality sector requires skilled culinary experts to cater to a diverse international palate.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="mt-16 lg:mt-24">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold text-text-light dark:text-text-dark">Numbers Speak</h2>
+<p class="mt-4 text-subtext-light dark:text-subtext-dark max-w-2xl mx-auto">Our track record in numbers. We are proud of our achievements and the trust our clients place in us.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+<div class="p-6 border border-border-light dark:border-border-dark rounded-xl shadow-sm">
+<h3 class="text-5xl font-bold text-primary">50k+</h3>
+<p class="mt-2 text-subtext-light dark:text-subtext-dark">Visas Processed</p>
+</div>
+<div class="p-6 border border-border-light dark:border-border-dark rounded-xl shadow-sm">
+<h3 class="text-5xl font-bold text-primary">98%</h3>
+<p class="mt-2 text-subtext-light dark:text-subtext-dark">Approval Rate</p>
+</div>
+<div class="p-6 border border-border-light dark:border-border-dark rounded-xl shadow-sm">
+<h3 class="text-5xl font-bold text-primary">120+</h3>
+<p class="mt-2 text-subtext-light dark:text-subtext-dark">Countries Served</p>
+</div>
+<div class="p-6 border border-border-light dark:border-border-dark rounded-xl shadow-sm">
+<h3 class="text-5xl font-bold text-primary">24hr</h3>
+<p class="mt-2 text-subtext-light dark:text-subtext-dark">Average Processing</p>
+</div>
+</div>
+</section>
+<section class="mt-16 lg:mt-24">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold text-text-light dark:text-text-dark">Any Queries? Contact Us</h2>
+<p class="mt-4 text-subtext-light dark:text-subtext-dark max-w-2xl mx-auto">We're here to help. Fill out the form below and a member of our team will get back to you shortly.</p>
+</div>
+<div class="max-w-3xl mx-auto">
+<form class="space-y-6">
+<div>
+<label class="block text-sm font-medium text-text-light dark:text-text-dark" for="name">Name</label>
+<div class="mt-2">
+<input autocomplete="name" class="block w-full rounded-lg border-0 py-3 bg-background-light dark:bg-gray-700 text-text-light dark:text-text-dark shadow-sm ring-1 ring-inset ring-border-light dark:ring-border-dark placeholder:text-subtext-light dark:placeholder:text-subtext-dark focus:ring-2 focus:ring-inset focus:ring-primary" id="name" name="name" placeholder="John Doe" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-text-light dark:text-text-dark" for="email">Email</label>
+<div class="mt-2">
+<input autocomplete="email" class="block w-full rounded-lg border-0 py-3 bg-background-light dark:bg-gray-700 text-text-light dark:text-text-dark shadow-sm ring-1 ring-inset ring-border-light dark:ring-border-dark placeholder:text-subtext-light dark:placeholder:text-subtext-dark focus:ring-2 focus:ring-inset focus:ring-primary" id="email" name="email" placeholder="you@example.com" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-text-light dark:text-text-dark" for="message">Message</label>
+<div class="mt-2">
+<textarea class="block w-full rounded-lg border-0 py-3 bg-background-light dark:bg-gray-700 text-text-light dark:text-text-dark shadow-sm ring-1 ring-inset ring-border-light dark:ring-border-dark placeholder:text-subtext-light dark:placeholder:text-subtext-dark focus:ring-2 focus:ring-inset focus:ring-primary" id="message" name="message" placeholder="Your message..." rows="4"></textarea>
+</div>
+</div>
+<div>
+<button class="w-full flex justify-center py-3 px-4 border border-transparent rounded-full shadow-sm text-sm font-medium text-white bg-primary hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-colors" type="submit">
+                            Send Message
+                        </button>
+</div>
+</form>
+</div>
+</section>
+<footer class="mt-16 lg:mt-24 pt-12 border-t border-border-light dark:border-border-dark">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+<div class="flex flex-col items-center md:items-start">
+<a class="flex items-center gap-2 text-2xl font-bold text-text-light dark:text-text-dark" href="#">
+<span class="material-symbols-outlined text-primary text-3xl">public</span>
+<span>evisa</span>
+</a>
+<p class="mt-4 text-subtext-light dark:text-subtext-dark text-sm max-w-xs">
+                    Your trusted partner for fast and secure e-visa applications.
+                </p>
+</div>
+<div class="md:col-span-2">
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-8">
+<div>
+<h4 class="font-semibold text-text-light dark:text-text-dark mb-4">Quick Links</h4>
+<nav class="flex flex-col space-y-2">
+<a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary transition-colors text-sm" href="#">Home</a>
+<a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary transition-colors text-sm" href="#">About Us</a>
+<a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary transition-colors text-sm" href="#">E-Visa</a>
+<a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary transition-colors text-sm" href="#">FAQ</a>
+<a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary transition-colors text-sm" href="#">Contact Us</a>
+</nav>
+</div>
+<div>
+<h4 class="font-semibold text-text-light dark:text-text-dark mb-4">Support</h4>
+<nav class="flex flex-col space-y-2">
+<a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary transition-colors text-sm" href="#">Help Center</a>
+<a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary transition-colors text-sm" href="#">Terms of Service</a>
+<a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary transition-colors text-sm" href="#">Privacy Policy</a>
+</nav>
+</div>
+<div>
+<h4 class="font-semibold text-text-light dark:text-text-dark mb-4">Contact</h4>
+<address class="not-italic text-subtext-light dark:text-subtext-dark text-sm space-y-2">
+<p>123 Visa Lane, Travel City</p>
+<p>+1 (234) 567-890</p>
+<p>support@evisa.com</p>
+</address>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 pt-8 border-t border-border-light dark:border-border-dark text-center">
+<p class="text-sm text-subtext-light dark:text-subtext-dark">© 2024 evisa. All rights reserved.</p>
+</div>
+</footer>
+</div>
+</body></html>

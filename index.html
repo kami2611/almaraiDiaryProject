@@ -186,12 +186,29 @@
 <a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-primary transition-all duration-300 hover:scale-110 hover:-translate-y-1" href="contact.html">Contact Us</a>
 </nav>
 
-<button class="lg:hidden text-text-light dark:text-text-dark hover:scale-110 transition-transform duration-300">
+<button id="mobileMenuBtn" class="lg:hidden text-text-light dark:text-text-dark hover:scale-110 transition-transform duration-300">
 <span class="material-symbols-outlined text-3xl">menu</span>
 </button>
+
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="hidden lg:hidden fixed inset-0 bg-black/50 z-50">
+<div class="bg-background-light dark:bg-background-dark w-64 h-full shadow-2xl p-6 animate-slide-in-left">
+<div class="flex justify-between items-center mb-8">
+<span class="text-xl font-bold text-text-light dark:text-text-dark">Menu</span>
+<button id="closeMobileMenu" class="text-text-light dark:text-text-dark hover:text-primary">
+<span class="material-symbols-outlined text-3xl">close</span>
+</button>
+</div>
+<nav class="flex flex-col space-y-4">
+<a class="text-text-light dark:text-text-dark hover:text-primary transition-colors duration-300 text-lg py-2 border-b border-border-light dark:border-border-dark" href="#">Home</a>
+<a class="text-text-light dark:text-text-dark hover:text-primary transition-colors duration-300 text-lg py-2 border-b border-border-light dark:border-border-dark" href="#services">Services</a>
+<a class="text-text-light dark:text-text-dark hover:text-primary transition-colors duration-300 text-lg py-2 border-b border-border-light dark:border-border-dark" href="contact.html">Contact Us</a>
+</nav>
+</div>
+</div>
 </header>
-<main class="grid lg:grid-cols-2 gap-16 items-center mt-8 lg:mt-12">
-<div class="flex flex-col gap-8 animate-slide-in-left">
+<main class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center mt-8 lg:mt-12">
+<div class="flex flex-col gap-8 animate-slide-in-left order-2 lg:order-1">
 <h1 class="text-5xl md:text-6xl font-bold text-text-light dark:text-text-dark leading-tight">
 <span class="text-primary animate-fade-in">Almarai Visa Company Free Visa jobs for Pakistan</span><br/>
                     
@@ -216,27 +233,28 @@
 </a>
 </div>
 </div>
-<div class="relative hidden lg:block animate-slide-in-right">
+<div class="relative animate-slide-in-right order-1 lg:order-2">
 <div class="bg-image-bg-light dark:bg-image-bg-dark rounded-2xl p-4 hover-lift">
 <img alt="Woman holding passport and tickets, standing with a yellow suitcase." class="w-full h-auto object-cover rounded-xl" src="assets/images/4brothers.jpeg" loading="lazy"/>
 </div>
+<!-- Floating flags -->
 <div class="absolute -top-6 left-4 flex items-center gap-2 bg-background-light dark:bg-background-dark p-2 px-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 animate-float" style="animation-delay: 0s;">
 <img alt="Flag of Saudi Arabia" class="w-5 h-5" src="https://flagcdn.com/w40/sa.png"/>
 <span class="text-sm font-medium text-text-light dark:text-text-dark">Saudi Arabia</span>
 </div>
-<div class="absolute top-24 -right-12 flex items-center gap-2 bg-background-light dark:bg-background-dark p-2 px-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 animate-float" style="animation-delay: 0.5s;">
+<div class="absolute top-24 -right-4 lg:-right-12 flex items-center gap-2 bg-background-light dark:bg-background-dark p-2 px-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 animate-float" style="animation-delay: 0.5s;">
 <img alt="Flag of UAE (Dubai)" class="w-5 h-5" src="https://flagcdn.com/w40/ae.png"/>
 <span class="text-sm font-medium text-text-light dark:text-text-dark">Dubai</span>
 </div>
-<div class="absolute top-3/4 -right-8 flex items-center gap-2 bg-background-light dark:bg-background-dark p-2 px-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 animate-float" style="animation-delay: 1s;">
+<div class="absolute top-3/4 -right-4 lg:-right-8 flex items-center gap-2 bg-background-light dark:bg-background-dark p-2 px-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 animate-float" style="animation-delay: 1s;">
 <img alt="Flag of UAE (Abu Dhabi)" class="w-5 h-5" src="https://flagcdn.com/w40/ae.png"/>
 <span class="text-sm font-medium text-text-light dark:text-text-dark">Abu Dhabi</span>
 </div>
-<div class="absolute top-1/2 -left-12 flex items-center gap-2 bg-background-light dark:bg-background-dark p-2 px-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 animate-float" style="animation-delay: 1.5s;">
+<div class="absolute top-1/2 -left-4 lg:-left-12 flex items-center gap-2 bg-background-light dark:bg-background-dark p-2 px-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 animate-float" style="animation-delay: 1.5s;">
 <img alt="Flag of Malaysia" class="w-5 h-5" src="https://flagcdn.com/w40/my.png"/>
 <span class="text-sm font-medium text-text-light dark:text-text-dark">Malaysia</span>
 </div>
-<div class="absolute bottom-12 -left-16 flex items-center gap-2 bg-background-light dark:bg-background-dark p-2 px-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 animate-float" style="animation-delay: 2s;">
+<div class="absolute bottom-12 -left-4 lg:-left-16 flex items-center gap-2 bg-background-light dark:bg-background-dark p-2 px-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 animate-float" style="animation-delay: 2s;">
 <img alt="Flag of Tanzania" class="w-5 h-5" src="https://flagcdn.com/w40/tz.png"/>
 <span class="text-sm font-medium text-text-light dark:text-text-dark">Tanzania</span>
 </div>
@@ -676,5 +694,44 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     </svg>
     <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center group-hover:scale-125 transition-transform duration-300">1</span>
 </a>
+<script>
+// Mobile menu functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeMobileMenu = document.getElementById('closeMobileMenu');
+    
+    // Open mobile menu
+    if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', function() {
+            mobileMenu.classList.remove('hidden');
+        });
+    }
+    
+    // Close mobile menu
+    if (closeMobileMenu) {
+        closeMobileMenu.addEventListener('click', function() {
+            mobileMenu.classList.add('hidden');
+        });
+    }
+    
+    // Close menu when clicking outside
+    if (mobileMenu) {
+        mobileMenu.addEventListener('click', function(e) {
+            if (e.target === mobileMenu) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    }
+    
+    // Close menu when clicking on a link
+    const mobileMenuLinks = document.querySelectorAll('#mobileMenu a');
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            mobileMenu.classList.add('hidden');
+        });
+    });
+});
+</script>
 </body>
 </html>
